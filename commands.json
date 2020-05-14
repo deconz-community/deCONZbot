@@ -1,6 +1,11 @@
 [
   {
     "CommandName": "conprob",
-    "CommandData": "In the #faq channel you find some suggestions to fix connection issues"
+    "CommandData": "In the <#704252638727897188> channel you find some suggestions to fix connection issues"
   },
+  {
+    "CommandName": "newdevice",
+    "CommandData": "If you want to request support for a new device, check the <#708404761140920370> channel for instructions!"
+  },
+ 
 ]
