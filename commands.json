@@ -11,6 +11,10 @@
     "CommandName": "newcommand",
     "CommandData": "If you want a new command added to the bot, please submit a PR [here](https://github.com/Mimiix/deCONZbot/blob/master/commands.json)"
   },
+  {
+    "CommandName": "yabbahtest"
+    "CommandData": "This is just a test ..."
+  },
  
   
   
