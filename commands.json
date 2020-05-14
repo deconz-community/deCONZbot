@@ -7,5 +7,11 @@
     "CommandName": "newdevice",
     "CommandData": "If you want to request support for a new device, check the <#708404761140920370> channel for instructions!"
   },
+  {
+    "CommandName": "newcommand",
+    "CommandData": "If you want a new command added to the bot, please submit a PR [here](https://github.com/Mimiix/deCONZbot/blob/master/commands.json)"
+  },
  
+  
+  
 ]
