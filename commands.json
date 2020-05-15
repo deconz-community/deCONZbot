@@ -1,6 +1,6 @@
 [
   {
-    "CommandName": "conprob",
+    "CommandName": "connectionproblem",
     "CommandData": "In the <#704252638727897188> channel you find some suggestions to fix connection issues"
   },
   {
@@ -12,7 +12,7 @@
     "CommandData": "If you want a new command added to the bot, please submit a PR [here](https://github.com/Mimiix/deCONZbot/blob/master/commands.json)"
   },
   {
-    "CommandName": "supdev",
+    "CommandName": "supporteddevices",
     "CommandData": "You can find a list of official supported devices on [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Supported-Devices)"
   },
 ]
