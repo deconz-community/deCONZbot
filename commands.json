@@ -11,7 +11,8 @@
     "CommandName": "newcommand",
     "CommandData": "If you want a new command added to the bot, please submit a PR [here](https://github.com/Mimiix/deCONZbot/blob/master/commands.json)"
   },
- 
-  
-  
+  {
+    "CommandName": "supdev",
+    "CommandData": "You can find a list of official supported devices on [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Supported-Devices)"
+  },
 ]
