@@ -15,4 +15,9 @@
     "CommandName": "supporteddevices",
     "CommandData": "You can find a list of official supported devices on [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Supported-Devices)"
   },
+  {
+    "CommandName": "errorcodes",
+    "CommandData": "A list of error codes can be found [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Zigbee-Error-Codes-in-the-Log)"
+  },
+]
 ]
