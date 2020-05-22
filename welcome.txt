@@ -2,7 +2,7 @@ These are the rules you **MUST** follow in order to get support from the members
 
 Feel free to introduce yourself, as we are all friends here.
 Do not insult, belittle, or abuse your fellow community members. Any reports of abuse will not be taken lightly and will lead to a ban.
-Head over to #botspam channel and run the command `~help` or `.help` to get started.
+
 
 
 A few more **important things** to remember:
