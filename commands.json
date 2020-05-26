@@ -20,7 +20,7 @@
     "CommandData": "A list of error codes can be found [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Zigbee-Error-Codes-in-the-Log)"
   },
   {
-    "CommandName": "hadebug2",
+    "CommandName": "hadebug",
     "CommandData": "To enable debug for the deCONZ addon in Home-Assistant, add the following to your config.yaml:```
     logger:
       default: info
