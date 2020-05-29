@@ -28,4 +28,13 @@
         pydeconz: debug
         homeassistant.components.deconz: debug```"
   },
+  {
+    "CommandName": "phosconbeta",
+    "CommandData": "To access the beta-version of Phoscon:
+    On your network, navigate to the following url and log in there:
+       http://phoscon.de/pwabeta/login.html
+    
+    If it shows a Docker IP, use the following url and fill in your local ip/port:
+       http://phoscon.de/pwabeta/login.html#host/<ip-adress>:<port>
+  },
 ]
