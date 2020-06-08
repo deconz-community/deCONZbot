@@ -37,5 +37,7 @@
     If it shows a Docker IP, use the following url and fill in your local ip/port:
        ```http://phoscon.de/pwabeta/login.html#host/<ip-adress>:<port>``` 
   },
+  { "CommandName": "restapi", "CommandData": "The documentation on the REST API can be found [here](https://dresden-elektronik.github.io/deconz-rest-doc/getting_started/)" }, { "CommandName": "missingdevice", "CommandData": "If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. Phoscon is closed source and needs devices to be added manually by their Developer. However, the device will still be usable with the API/Home-Assistant/OpenHAB etc." },
+  
   
 ]
