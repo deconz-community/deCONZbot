@@ -36,13 +36,5 @@
     "CommandName": "missingdevice", 
     "CommandData": "If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. Phoscon is closed source and needs devices to be added manually by their Developer. However, the device will still be usable with the API/Home-Assistant/OpenHAB etc." 
   },
-  {
-    "CommandName": "phosconbeta",
-    "CommandData": "To access the beta-version of Phoscon:
-    On your network, navigate to the following url and log in there:
-       ``` http://phoscon.de/pwabeta/login.html``` 
-    
-    If it shows a Docker IP, use the following url and fill in your local ip/port:
-       ```http://phoscon.de/pwabeta/login.html#host/<ip-adress>:<port>``` "
-  },
+
 ]
