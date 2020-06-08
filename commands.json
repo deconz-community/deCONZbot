@@ -43,6 +43,6 @@
        ``` http://phoscon.de/pwabeta/login.html``` 
     
     If it shows a Docker IP, use the following url and fill in your local ip/port:
-       ```http://phoscon.de/pwabeta/login.html#host/<ip-adress>:<port>``` 
+       ```http://phoscon.de/pwabeta/login.html#host/<ip-adress>:<port>``` "
   },
 ]
