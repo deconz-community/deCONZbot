@@ -1,5 +1,9 @@
 [
   {
+    "CommandName": "remotelogin",
+    "CommandData": "If you want to remotely connect to your deCONZ install via SSH or VNC [here](https://phoscon.de/en/raspbee/sdcard#login-via-ssh)"
+  },
+  {
     "CommandName": "connectionproblem",
     "CommandData": "In the <#704252638727897188> channel you find some suggestions to fix connection issues"
   },
