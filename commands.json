@@ -48,7 +48,7 @@
   }, 
   { 
     "CommandName": "indeconznotphoscon", 
-    "CommandData": "If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. Phoscon is closed source and needs devices to be added manually by their Developer. However, the device will still be usable with the API/Home-Assistant/OpenHAB etc." 
+    "CommandData": "If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. Phoscon is closed source and needs devices to be added manually by their Developer. However, the device will still be usable with the API/Home-Assistant/OpenHAB etc. You may want to go ahead and request support for your device at the [Phoscon repo](https://github.com/dresden-elektronik/phoscon-app-beta/issues)" 
   },
   { 
     "CommandName": "bugreport", 
