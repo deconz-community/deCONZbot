@@ -66,6 +66,10 @@
     "CommandData": "The Phoscon github repository can be found [here](https://github.com/dresden-elektronik/phoscon-app-beta)" 
   }, 
   { 
+    "CommandName": "deconzinfo", 
+    "CommandData": "An excelent guide on deCONZ is "deCONZ for Dummies" written by Ebaauw(Thanks!). This is a small document on how it works and what it is. You can find it [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/deCONZ-for-Dummies)" 
+  }, 
+  { 
     "CommandName": "issue", 
     "CommandData": "You can open a issue [here](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new/choose)" 
   }, 
