@@ -42,9 +42,32 @@
         pydeconz: debug
         homeassistant.components.deconz: debug```"
   },
+  {
+    "CommandName": "wiringpi",
+    "CommandData": "Updating wiring pi for use with Raspbee on RPI4:```
+     cd /tmp
+     wget https://project-downloads.drogon.net/wiringpi-latest.deb
+     sudo dpkg -i wiringpi-latest.deb```"
+  },
+  {
+    "CommandName": "extensioncable",
+    "CommandData": "The extension cable is needed to avoid the USB3.0 interference bug. Any 2.4GHZ device has this issue, but with a usb extension cable you can avoid that. [More information](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb3-frequency-interference-paper.html)"
+  },
   { 
     "CommandName": "restapi", 
     "CommandData": "The documentation on the REST API can be found [here](https://dresden-elektronik.github.io/deconz-rest-doc/getting_started/)" 
+  }, 
+  { 
+    "CommandName": "deconzrepo", 
+    "CommandData": "The deCONZ github repository can be found [here](https://github.com/dresden-elektronik/deconz-rest-plugin)" 
+  }, 
+  { 
+    "CommandName": "phosconrepo", 
+    "CommandData": "The Phoscon github repository can be found [here](https://github.com/dresden-elektronik/phoscon-app-beta)" 
+  }, 
+  { 
+    "CommandName": "issue", 
+    "CommandData": "You can open a issue [here](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new/choose)" 
   }, 
   { 
     "CommandName": "indeconznotphoscon", 
