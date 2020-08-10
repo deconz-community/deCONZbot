@@ -82,6 +82,14 @@
     "CommandData": "You can open a bug report in Github [here](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new?assignees=&labels=Bug+report&template=bug_report.md&title=)" 
   },
   { 
+    "CommandName": "homebridgehue", 
+    "CommandData": "For help with Homebridge Hue, please join [this Discord.](https://discord.gg/MbuzGbS)" 
+  },
+  { 
+    "CommandName": "hueessentials", 
+    "CommandData": "For information and support on the Hue Essentials app, please go to [this forum.](https://community.hueessentials.com/)" 
+  },
+  { 
     "CommandName": "binding", 
     "CommandData": "You can find out how to re-do binding and attribute reporting [here](https://discordapp.com/channels/494922323518947329/704252638727897188/709120485862146161) _Please note that Xiaomi sensors don't support this feature_" 
   },
