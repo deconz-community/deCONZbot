@@ -13,7 +13,7 @@
   },
   {
     "CommandName": "requestdevice",
-    "CommandData": "If you want to request support for a new device, check the <#708404761140920370> channel for instructions!"
+    "CommandData": "If you want to request support for a new device, open a [Device Request issue](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new?assignees=&labels=Device+Request&template=device-request.md&title=Device+name) here."
   },
   {
     "CommandName": "newcommand",
