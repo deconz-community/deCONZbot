@@ -99,6 +99,10 @@
     "CommandData": "You can find out how to re-do binding and attribute reporting [here](https://discordapp.com/channels/494922323518947329/704252638727897188/709120485862146161) _Please note that Xiaomi sensors don't support this feature_" 
   },
   { 
+    "CommandName": "rules", 
+    "CommandData": "Please stick to the rules! You can find them [here](https://discordapp.com/channels/494922323518947329/749991186638307400/749991270365266010)" 
+  },
+  { 
     "CommandName": "firmwareupdate", 
     "CommandData": "The firmware update button doesn't work properly in the HA addon or docker installations. Nor does it work fine in Virtual machines. On [this](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Update-deCONZ-manually) page you can find out how to update. Please use a native installation to update." 
   },
