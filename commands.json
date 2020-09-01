@@ -34,6 +34,11 @@
       /usr/bin/deCONZ --dbg-info=2 --dbg-error=2 > debug```"
   },
   {
+    "CommandName": "debugflags",
+    "CommandData": "To enable debugging, add the following flags to your runscript: `--dbg-info=1 --dbg-aps=1 --dbg-error=1`"
+  },
+  
+  {
     "CommandName": "hadebug",
     "CommandData": "To enable debug for the deCONZ integration in Home-Assistant, add the following to your configuration.yaml:```
     logger:
