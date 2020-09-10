@@ -36,7 +36,7 @@
   {
     "CommandName": "debugflags",
     "CommandData": "To enable debugging, add the following flags to your runscript: 
-      `--dbg-info=1 --dbg-aps=1 --dbg-error=1`"
+      `--dbg-info=2 --dbg-aps=1 --dbg-error=2`"
   },
   
   {
