@@ -50,11 +50,11 @@
   },
   {
     "CommandName": "adddevice",
-    "CommandData": "The best way to add a new device:```
+    "CommandData": "The best way to add a new device:
 1 Change the setting to search for device in phoscon to 10 minutes  
 2 Start the search for lights/sensors/switches  
 3 Reset the device 
-4 In case of a battery device: keep it awake.```"
+4 In case of a battery device: keep it awake."
   },
   {
 
