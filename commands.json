@@ -113,6 +113,15 @@
     "CommandData": "Please stick to the rules! You can find them [here](https://discordapp.com/channels/494922323518947329/749991186638307400/749991270365266010)" 
   },
   { 
+    "CommandName": "apikey", 
+    "CommandData": "[This page](https://dresden-elektronik.github.io/deconz-rest-doc/getting_started/#acquire-an-api-key) describes how to obtain a API-key." 
+  },
+  { 
+    "CommandName": "debuglogs", 
+    "CommandData": "To enable logging. Open deCONZ and click `Help`. After that, click `Debug View`.  The following debug levels need to be enabled for proper logging: `INFO`, `ERROR`,`ERROR_L2`,`APS`,`APS_L2`." 
+  },
+  
+  { 
     "CommandName": "firmwareupdate", 
     "CommandData": "The firmware update button doesn't work properly in the HA addon or docker installations. Nor does it work fine in Virtual machines. On [this](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Update-deCONZ-manually) page you can find out how to update. Please use a native installation to update." 
   },
