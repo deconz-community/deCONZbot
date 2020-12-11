@@ -125,7 +125,7 @@
     "CommandData": "To enable logging in ioBroker: Go to `Instances` -> `Activate Expert Mode`  -> `Column Log-level` -> `debug`. " 
   },  
  {
-    "CommandName": "iasenrole",
+    "CommandName": "iasenroll",
     "CommandData": "1. Open deCONZ.  
 2. Select the Coordinator (blue node) on the map and copy value of the IEEE field.  
 3. Select the Motionsensor, click the `ias zone` cluster.  
