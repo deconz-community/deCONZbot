@@ -124,7 +124,17 @@
     "CommandName": "iobrokerdebug", 
     "CommandData": "To enable logging in ioBroker: Go to `Instances` -> `Activate Expert Mode`  -> `Column Log-level` -> `debug`. " 
   },  
-
+ {
+    "CommandName": "iasenrole",
+    "CommandData": "1. Open deCONZ.  
+2. Select the Coordinator (blue node) on the map and copy value of the IEEE field.  
+3. Select the Motionsensor, click the `ias zone` cluster.  
+4. Scroll down to the attributes list to attribute `0x0010`  
+5. double click the `value`  
+6. put the IEEE value you copied earlier in the textbox above.  
+7. Make sure the Sensor is awake. This can be done by clicking the reset button once.  
+8. Click `Write`"  
+  },
 
   { 
     "CommandName": "firmwareupdate", 
