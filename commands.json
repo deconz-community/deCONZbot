@@ -4,6 +4,11 @@
     "CommandData": "If you want to remotely connect to your deCONZ install via SSH or VNC [here](https://phoscon.de/en/raspbee/sdcard#login-via-ssh)"
   },
   {
+    "CommandName": "headlessdeconzgui",
+    "CommandData": "To setup deCONZ on headless installs read this [guide](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Access-deCONZ-GUI-in-headless-setups)"
+  },
+
+  {
     "CommandName": "readclusters",
     "CommandData": "[This page](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/How-to-read-Clusters) explains how to read clusters."
   },
