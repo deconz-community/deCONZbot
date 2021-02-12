@@ -129,6 +129,10 @@
     "CommandName": "iobrokerdebug", 
     "CommandData": "To enable logging in ioBroker: Go to `Instances` -> `Activate Expert Mode`  -> `Column Log-level` -> `debug`. " 
   },  
+  { 
+    "CommandName": "buttondebug", 
+    "CommandData": "To debug if button events are working properly, you can find pointers [here](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/4407#issuecomment-778090744)." 
+  },  
  {
     "CommandName": "iasenroll",
     "CommandData": "1. Open deCONZ.  
