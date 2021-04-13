@@ -153,5 +153,9 @@
     "CommandName": "deconzorphoscon", 
     "CommandData": "Deconz: The GUI with the mesh and advanced device settings.
                     Phoscon: The interface reachable in the browser" 
+  },
+  {
+    "CommandName": "lqi",
+    "CommandData": "Link Quality Indicator (LQI) is explained on [this wiki page](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/LQI-explained)."
   }
 ]
