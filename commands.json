@@ -144,7 +144,24 @@
 7. Make sure the Sensor is awake. This can be done by clicking the reset button once.  
 8. Click `Write`"  
   },
+ {
+    "CommandName": "troubleshoot",
+    "CommandData": "
+**1. Provide sufficient information**
+This includes the following:
+* Conbee I/II or Raspbee I/II?
+* What platform are you running on? Virtual machine? Docker? Home Assistant Add-on? Official SD card images? Other?
+* What hardware are you running on? NAS? RPi? Laptop?
+* If using RPi, do you see voltage warnings in sudo dmesg?
+* What devices other than Conbee/Raspbee are connected to your server? SSD disks? Other sticks? Any USB3 devices?
+* If using a Conbee I/II, are you using an extension cable?
+* Do you see any errors in the deCONZ log? Some of the most common error codes is explained here: https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Zigbee-Error-Codes-in-the-Log
 
+**2. Enable deCONZ logging**
+Open the deCONZ GUI and click Help. After that, click Debug View.  The following debug levels need to be enabled for proper logging: INFO, ERROR,ERROR_L2,APS,APS_L2.
+
+Put the output of these logs in a pastebin and share the link. This will improve your chances of getting help."  
+  },
   { 
     "CommandName": "firmwareupdate", 
     "CommandData": "The firmware update button doesn't work properly in the HA addon or docker installations. Nor does it work fine in Virtual machines. On [this](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Update-deCONZ-manually) page you can find out how to update. Please use a native installation to update." 
