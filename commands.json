@@ -148,6 +148,7 @@
     "CommandName": "troubleshoot",
     "CommandData": "
 To get your issue solved, make sure to provide as much information as possible. This includes the following:
+
 **1. Provide sufficient information**
 This includes the following:
 * Conbee I/II or Raspbee I/II?
