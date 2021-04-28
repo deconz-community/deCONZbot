@@ -121,9 +121,13 @@
     "CommandName": "apikey", 
     "CommandData": "[This page](https://dresden-elektronik.github.io/deconz-rest-doc/getting_started/#acquire-an-api-key) describes how to obtain a API-key." 
   },
-  { 
-    "CommandName": "debuglogs", 
-    "CommandData": "To enable logging. Open deCONZ and click `Help`. After that, click `Debug View`.  The following debug levels need to be enabled for proper logging: `INFO`, `ERROR`,`ERROR_L2`,`APS`,`APS_L2`." 
+  {
+    "CommandName": "debuglogs",
+    "CommandData": "To enable logging, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `ERROR`,`ERROR_L2`,`APS`,`APS_L2`.
+
+Be sure to capture at least a few minutes worth of logs. When sharing these logs, DO NOT attempt to paste them into a channel. Instead use a pastebin service such as [this](https://paste.debian.net/) or [this](https://pastebin.com/).
+
+When done, don't forget to disable logging. This is especually important when running off an SD card, as it will cause unnessecary writes, and might shorten the life of the media."
   },
   { 
     "CommandName": "iobrokerdebug", 
