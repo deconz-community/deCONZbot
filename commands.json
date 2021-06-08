@@ -34,9 +34,11 @@
   },
   {
     "CommandName": "linuxdebug",
-    "CommandData": "To enable debug on a linux installation, use the following commands:```
+    "CommandData": "To collect debug logs on a linux installation, use the following commands:```
       sudo systemctl stop deconz-gui
-      /usr/bin/deCONZ --dbg-info=2 --dbg-error=2 > debug```"
+      sudo systemctl stop deconz
+      /usr/bin/deCONZ -platform minimal --dbg-aps=1 --dbg-info=2 --dbg-error=2 > debug```
+      Let it run for a few minutes, the exit the process with CTRL+C. You can now start the systemctl service again. If you need to share the log, use https://pastebin.com or similar."
   },
   {
     "CommandName": "debugflags",
@@ -55,7 +57,7 @@
   },
   {
     "CommandName": "adddevice",
-    "CommandData": "The best way to add a new device:
+    "CommandData": "The best way to pair a new device:
 1 Change the setting to search for device in phoscon to 10 minutes
 2 Start the search for lights/sensors/switches
 3 Reset the device
@@ -71,7 +73,7 @@
   },
   {
     "CommandName": "extensioncable",
-    "CommandData": "The extension cable is needed to avoid the USB3.0 interference bug. Any 2.4GHZ device has this issue, but with a usb extension cable you can avoid that. [More information](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb3-frequency-interference-paper.html)"
+    "CommandData": "The extension cable is needed to avoid the USB3.0 interference bug. Any 2.4GHZ device has this issue, but with a USB extension cable you can avoid that. [More information](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb3-frequency-interference-paper.html)"
   },
   { 
     "CommandName": "restapi", 
@@ -87,7 +89,7 @@
   }, 
   { 
     "CommandName": "deconzinfo", 
-    "CommandData": "An excelent guide on deCONZ is deCONZ for Dummies written by Ebaauw. This is a small document on how it works and what it is. You can find it [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/deCONZ-for-Dummies)" 
+    "CommandData": "An excellent guide on deCONZ is deCONZ for Dummies written by Ebaauw. This is a small document on how it works and what it is. You can find it [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/deCONZ-for-Dummies)" 
   }, 
   { 
     "CommandName": "issue", 
@@ -95,7 +97,7 @@
   }, 
   { 
     "CommandName": "indeconznotphoscon", 
-    "CommandData": "If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. Phoscon is closed source and needs devices to be added manually by their Developer. However, the device will still be usable with the API/Home-Assistant/OpenHAB etc. You may want to go ahead and request support for your device at the [Phoscon repo](https://github.com/dresden-elektronik/phoscon-app-beta/issues)" 
+    "CommandData": "If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. Phoscon is closed source and needs devices to be added manually by their developer. However, the device will still be usable with the API/Home-Assistant/OpenHAB etc. You may want to go ahead and request support for your device at the [Phoscon repo](https://github.com/dresden-elektronik/phoscon-app-beta/issues)" 
   },
   { 
     "CommandName": "bugreport", 
@@ -123,11 +125,18 @@
   },
   {
     "CommandName": "debuglogs",
-    "CommandData": "To enable logging, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `ERROR`,`ERROR_L2`,`APS`,`APS_L2`.
+    "CommandData": "To get debug logs in a GUI installation, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `ERROR`,`ERROR_L2`,`APS`,`APS_L2`.
+
+To get debug logs in a headless installation / ssh session, use the following commands:```
+      sudo systemctl stop deconz-gui
+      sudo systemctl stop deconz
+      /usr/bin/deCONZ -platform minimal --dbg-aps=1 --dbg-info=2 --dbg-error=2 > debug.txt```
+When done, exit the process with `CTRL+C`. You can now start the systemctl service again. Your logs will be in the `debug.txt` file in the current directory. 
+
 
 Be sure to capture at least a few minutes worth of logs. When sharing these logs, DO NOT attempt to paste them into a channel. Instead use a pastebin service such as [this](https://paste.debian.net/) or [this](https://pastebin.com/).
 
-When done, don't forget to disable logging. This is especually important when running off an SD card, as it will cause unnessecary writes, and might shorten the life of the media."
+When done, don't forget to disable logging. This is especially important when running off an SD card, as it will cause unnessecary writes, and might shorten the life of your media."
   },
   { 
     "CommandName": "iobrokerdebug", 
