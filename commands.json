@@ -125,9 +125,9 @@
   },
   {
     "CommandName": "debuglogs",
-    "CommandData": "To get debug logs in a GUI installation, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `ERROR`,`ERROR_L2`,`APS`,`APS_L2`.
+    "CommandData": "Option 1: To get debug logs in a GUI installation, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `ERROR`,`ERROR_L2`,`APS`,`APS_L2`.
 
-To get debug logs in a headless installation / ssh session, use the following commands:```
+Option 2: To get debug logs in a headless installation / ssh session, use the following commands:```
       sudo systemctl stop deconz-gui
       sudo systemctl stop deconz
       /usr/bin/deCONZ -platform minimal --dbg-aps=1 --dbg-info=2 --dbg-error=2 > debug.txt```
