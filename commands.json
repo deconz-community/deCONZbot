@@ -130,7 +130,7 @@
 Option 2: To get debug logs in a headless installation / ssh session, use the following commands:```
       sudo systemctl stop deconz-gui
       sudo systemctl stop deconz
-      /usr/bin/deCONZ -platform minimal --dbg-aps=1 --dbg-info=2 --dbg-error=2 > debug.txt```
+      /usr/bin/deCONZ -platform minimal --dbg-aps=2 --dbg-info=2 --dbg-error=2 > debug.txt```
 When done, exit the process with `CTRL+C`. You can now start the systemctl service again. Your logs will be in the `debug.txt` file in the current directory. 
 
 
