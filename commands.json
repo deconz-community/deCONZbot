@@ -154,5 +154,9 @@ Put the output of these logs in a pastebin and share the link. This will improve
   {
     "CommandName": "lqi",
     "CommandData": "Link Quality Indicator (LQI) is explained on [this wiki page](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/LQI-explained)."
+  },
+  {
+    "CommandName": "ping",
+    "CommandData": "Pong! This command has to be the last command in the json file to make sure it parses correctly. This response made sure it works!"
   }
 ]
