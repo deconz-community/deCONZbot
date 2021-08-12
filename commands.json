@@ -13,10 +13,6 @@
     "CommandData": "[This page](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/How-to-read-Clusters) explains how to read clusters."
   },
   {
-    "CommandName": "connectionproblem",
-    "CommandData": "In the <#704252638727897188> channel you find some suggestions to fix connection issues"
-  },
-  {
     "CommandName": "devicerequest",
     "CommandData": "If you want to request support for a new device, open a [Device Request issue](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new?assignees=&labels=Device+Request&template=device-request.md&title=Device+name) here. Please be adviced that you need to own the device in order to request support."
   },
@@ -31,29 +27,6 @@
   {
     "CommandName": "errorcodes",
     "CommandData": "A list of error codes can be found [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Zigbee-Error-Codes-in-the-Log)"
-  },
-  {
-    "CommandName": "linuxdebug",
-    "CommandData": "To collect debug logs on a linux installation, use the following commands:```
-      sudo systemctl stop deconz-gui
-      sudo systemctl stop deconz
-      /usr/bin/deCONZ -platform minimal --dbg-aps=1 --dbg-info=2 --dbg-error=2 > debug```
-      Let it run for a few minutes, the exit the process with CTRL+C. You can now start the systemctl service again. If you need to share the log, use https://pastebin.com or similar."
-  },
-  {
-    "CommandName": "debugflags",
-    "CommandData": "To enable debugging, add the following flags to your runscript: 
-      `--dbg-info=2 --dbg-aps=1 --dbg-error=2`"
-  },
-  
-  {
-    "CommandName": "hadebug",
-    "CommandData": "To enable debug for the deCONZ integration in Home-Assistant, add the following to your configuration.yaml:```
-    logger:
-      default: info
-      logs:
-        pydeconz: debug
-        homeassistant.components.deconz: debug```"
   },
   {
     "CommandName": "adddevice",
@@ -88,20 +61,16 @@
     "CommandData": "The Phoscon github repository can be found [here](https://github.com/dresden-elektronik/phoscon-app-beta)" 
   }, 
   { 
+    "CommandName": "forums", 
+    "CommandData": "The forums can be found [here](https://forum.phoscon.de)." 
+  }, 
+  { 
     "CommandName": "deconzinfo", 
     "CommandData": "An excellent guide on deCONZ is deCONZ for Dummies written by Ebaauw. This is a small document on how it works and what it is. You can find it [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/deCONZ-for-Dummies)" 
   }, 
   { 
-    "CommandName": "issue", 
-    "CommandData": "You can open a issue [here](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new/choose)" 
-  }, 
-  { 
     "CommandName": "indeconznotphoscon", 
     "CommandData": "If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. Phoscon is closed source and needs devices to be added manually by their developer. However, the device will still be usable with the API/Home-Assistant/OpenHAB etc. You may want to go ahead and request support for your device at the [Phoscon repo](https://github.com/dresden-elektronik/phoscon-app-beta/issues)" 
-  },
-  { 
-    "CommandName": "bugreport", 
-    "CommandData": "You can open a bug report in Github [here](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new?assignees=&labels=Bug+report&template=bug_report.md&title=)" 
   },
   { 
     "CommandName": "homebridgehue", 
@@ -141,10 +110,6 @@ When done, don't forget to disable logging. This is especially important when ru
   { 
     "CommandName": "iobrokerdebug", 
     "CommandData": "To enable logging in ioBroker: Go to `Instances` -> `Activate Expert Mode`  -> `Column Log-level` -> `debug`. " 
-  },  
-  { 
-    "CommandName": "buttondebug", 
-    "CommandData": "To debug if button events are working properly, you can find pointers [here](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/4407#issuecomment-778090744)." 
   },  
  {
     "CommandName": "iasenroll",
