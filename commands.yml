@@ -1,0 +1,90 @@
+---
+commands:
+  remotelogin: If you want to remotely connect to your deCONZ install via SSH or VNC [here](https://phoscon.de/en/raspbee/sdcard#login-via-ssh)
+  headlessdeconzgui: To setup deCONZ on headless installs read this [guide](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Access-deCONZ-GUI-in-headless-setups)
+  readclusters: "[This page](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/How-to-read-Clusters) explains how to read clusters."
+  devicerequest: >
+    If you want to request support for a new device, open a 
+    [Device Request issue](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new?assignees=&labels=Device+Request&template=device-request.md&title=Device+name)
+    here. Please be adviced that you need to own the device in order to request support.
+  newcommand: If you want a new command added to the bot, please submit a PR [here](https://github.com/Mimiix/deCONZbot/blob/master/commands.json)
+  supporteddevices: You can find a list of official supported devices on [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Supported-Devices)
+  errorcodes: A list of error codes can be found [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Zigbee-Error-Codes-in-the-Log)
+  adddevice: |
+    The best way to pair a new device
+
+    1. Change the setting to search for device in phoscon to 10 minutes
+    2. Start the search for lights/sensors/switches
+    3. Reset the device
+    4. In case of a battery device, keep it awake.
+  wiringpi: |
+    Updating wiring pi for use with Raspbee on RPI4:
+    ```
+    cd /tmp wget https://project-downloads.drogon.net/wiringpi-latest.deb
+    sudo dpkg -i wiringpi-latest.deb
+    ```
+  extensioncable: >
+    The extension cable is needed to avoid the USB3.0 interference bug. Any 2.4GHZ device has this issue, but with a USB extension cable you can avoid that. 
+    [More information](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb3-frequency-interference-paper.html)
+  restapi: The documentation on the REST API can be found [here](https://dresden-elektronik.github.io/deconz-rest-doc/getting_started/)
+  deconzrepo: The deCONZ github repository can be found [here](https://github.com/dresden-elektronik/deconz-rest-plugin)
+  phosconrepo: The Phoscon github repository can be found [here](https://github.com/dresden-elektronik/phoscon-app-beta)
+  forums: The forums can be found [here](https://forum.phoscon.de).
+  deconzinfo: An excellent guide on deCONZ is deCONZ for Dummies written by Ebaauw. This is a small document on how it works and what it is. You can find it [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/deCONZ-for-Dummies)
+  indeconznotphoscon: >
+    If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. 
+    Phoscon is closed source and needs devices to be added manually by their developer. 
+    However, the device will still be usable with the API/Home-Assistant/OpenHAB etc.
+    You may want to go ahead and request support for your device at the [Phoscon repo](https://github.com/dresden-elektronik/phoscon-app-beta/issues)
+  homebridgehue: For help with Homebridge Hue, please join [this Discord.](https://discord.gg/MbuzGbS)
+  hueessentials: For information and support on the Hue Essentials app, please go to [this forum.](https://community.hueessentials.com/)
+  binding: >
+    You can find out how to re-do binding and attribute reporting [here](https://discordapp.com/channels/494922323518947329/704252638727897188/709120485862146161)
+    _Please note that Xiaomi sensors don't support this feature_
+  rules: Please stick to the rules! You can find them [here](https://discordapp.com/channels/494922323518947329/749991186638307400/749991270365266010)
+  apikey: "[This page](https://dresden-elektronik.github.io/deconz-rest-doc/getting_started/#acquire-an-api-key) describes how to obtain a API-key."
+  debuglogs: |
+    Option 1: To get debug logs in a GUI installation, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `INFO_L2`, `ERROR`, `ERROR_L2`, `APS`, `APS_L2`. 
+
+    Option 2: To get debug logs in a headless installation / ssh session, use the following commands:
+    ```
+          sudo systemctl stop deconz-gui
+          sudo systemctl stop deconz
+          /usr/bin/deCONZ -platform minimal --dbg-aps=2 --dbg-info=2 --dbg-error=2 | tee debug.txt
+    ```
+
+    When done, exit the process with `CTRL+C`. You can now start the systemctl service again. Your logs will be printed in the console, as well as saved to a file named `debug.txt` in the current directory. Be sure to capture at least a few minutes worth of logs. When sharing these logs, DO NOT attempt to paste them into a channel. Instead use a pastebin service such as [this](https://paste.debian.net/) or [this](https://pastebin.com/).
+
+    When done, don't forget to disable logging. This is especially important when running off an SD card, as the debug logging will cause unnessecary writes, and might shorten the life of your media.
+  iobrokerdebug: To enable logging in ioBroker, Go to `Instances` -> `Activate Expert Mode`  -> `Column Log-level` -> `debug`.
+  iasenroll: |
+    1. Open deCONZ. 
+    2. Select the Coordinator (blue node) on the map and copy value of the IEEE field.
+    3. Select the Motionsensor, click the `ias zone` cluster.
+    4. Scroll down to the attributes list to attribute `0x0010`
+    5. Double click the `value`
+    6. Put the IEEE value you copied earlier in the textbox above.
+    7. Make sure the Sensor is awake. This can be done by clicking the reset button once.
+    8. Click `Write`
+  troubleshoot: |
+    To increase you chances of getting your issue solved, make sure to provide as much information as possible. 
+
+    **1. Provide sufficient information** 
+    This includes the following:
+    * Conbee I/II or Raspbee I/II? 
+    * What platform are you running on? Virtual machine?
+    Docker? Home Assistant Add-on? Official SD card images? Other?
+    * What hardware are you running on? NAS? RPi? Laptop?
+    * If using RPi, do you see voltage warnings in sudo dmesg?
+    * What devices other than Conbee/Raspbee are connected to your server? SSD disks? Other sticks? Any USB3 devices?
+    * If using a Conbee I/II, are you using an extension cable?* Do you see any errors in the deCONZ log? Some of the most common error codes is explained here: https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Zigbee-Error-Codes-in-the-Log
+
+    **2.Enable deCONZ logging**
+    Open the deCONZ GUI and click Help. After that, click Debug View. The following debug levels need to be enabled for proper logging: INFO, ERROR,ERROR_L2,APS,APS_L2. Put the output of these logs in a pastebin and share the link. This will improve your chances of getting help.
+  firmwareupdate: >
+    The firmware update button doesn't work properly in the HA addon or docker installations.
+    Nor does it work fine in Virtual machines. On [this](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Update-deCONZ-manually) page you can find out how to update. Please use a native installation to update.
+  deconzorphoscon: |
+    Deconz: The GUI with the mesh and advanced device settings.
+    Phoscon: The interface reachable in the browser
+  lqi: Link Quality Indicator (LQI) is explained on [this wiki page](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/LQI-explained).
