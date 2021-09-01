@@ -35,7 +35,7 @@ commands:
     If you see devices within deCONZ but not in Phoscon, that is most of the time perfectly normal. 
     Phoscon is closed source and needs devices to be added manually by their developer. 
     However, the device will still be usable with the API/Home-Assistant/OpenHAB etc.
-    You may want to go ahead and request support for your device at the [Phoscon repo](https://github.com/dresden-elektronik/phoscon-app-beta/issues)
+    You may want to go ahead and request support for your device at the [Forums](https://forum.phoscon.de/c/phoscon/feature-requests/18)
   homebridgehue: For help with Homebridge Hue, please join [this Discord.](https://discord.gg/MbuzGbS)
   hueessentials: For information and support on the Hue Essentials app, please go to [this forum.](https://community.hueessentials.com/)
   binding: >
