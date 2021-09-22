@@ -44,7 +44,8 @@ commands:
   rules: Please stick to the rules! You can find them [here](https://discordapp.com/channels/494922323518947329/749991186638307400/749991270365266010)
   apikey: "[This page](https://dresden-elektronik.github.io/deconz-rest-doc/getting_started/#acquire-an-api-key) describes how to obtain a API-key."
   debuglogs: |
-    Option 1: To get debug logs in a GUI installation, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `INFO_L2`, `ERROR`, `ERROR_L2`, `APS`, `APS_L2`. 
+    Option 1: To get debug logs in a GUI installation, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `INFO_L2`, `ERROR`, `ERROR_L2`, `APS`, `APS_L2`.  
+    Please note that in the HA Addon and Docker webVNC you can't copy paste. You need to use a Native VNC Client. [HA Addon How-To](https://community.home-assistant.io/t/deconz-addon-how-to-enable-vnc-set-port-in-network-configuration/137597), [Docker Environment Vars](https://community.home-assistant.io/t/deconz-addon-how-to-enable-vnc-set-port-in-network-configuration/137597). 
 
     Option 2: To get debug logs in a headless installation / ssh session, use the following commands:
     ```
@@ -55,7 +56,7 @@ commands:
 
     When done, exit the process with `CTRL+C`. You can now start the systemctl service again. Your logs will be printed in the console, as well as saved to a file named `debug.txt` in the current directory. Be sure to capture at least a few minutes worth of logs. When sharing these logs, DO NOT attempt to paste them into a channel. Instead use a pastebin service such as [this](https://paste.debian.net/) or [this](https://pastebin.com/).
 
-    When done, don't forget to disable logging. This is especially important when running off an SD card, as the debug logging will cause unnessecary writes, and might shorten the life of your media.
+    Afterwards, don't forget to disable logging. This is especially important when running off an SD card, as the debug logging will cause unnessecary writes, and might shorten the life of your media.
   iobrokerdebug: To enable logging in ioBroker, Go to `Instances` -> `Activate Expert Mode`  -> `Column Log-level` -> `debug`.
   iasenroll: |
     1. Open deCONZ. 
