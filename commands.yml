@@ -7,9 +7,10 @@ commands:
     If you want to request support for a new device, open a 
     [Device Request issue](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new?assignees=&labels=Device+Request&template=device-request.md&title=Device+name)
     here. Please be adviced that you need to own the device in order to request support.
-  newcommand: If you want a new command added to the bot, please submit a PR [here](https://github.com/Mimiix/deCONZbot/blob/master/commands.json)
+  newcommand: If you want a new command added to the bot, please submit a PR [here](https://github.com/Mimiix/deCONZbot/blob/master/commands.yml)
   supporteddevices: You can find a list of official supported devices on [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Supported-Devices)
   errorcodes: A list of error codes can be found [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Zigbee-Error-Codes-in-the-Log)
+  missingsensor: To solve issues with devices with non reporting sensors read [here](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Xiaomi:-Lost-devices-or-functional-issues) for help.
   adddevice: |
     The best way to pair a new device
 
