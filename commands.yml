@@ -46,7 +46,7 @@ commands:
   apikey: "[This page](https://dresden-elektronik.github.io/deconz-rest-doc/getting_started/#acquire-an-api-key) describes how to obtain a API-key."
   debuglogs: |
     Option 1: To get debug logs in a GUI installation, open deCONZ and click `Help`. After that, click `Debug View`. The following debug levels need to be enabled for proper logging: `INFO`, `INFO_L2`, `ERROR`, `ERROR_L2`, `APS`, `APS_L2`.  
-    Please note that in the HA Addon and Docker webVNC you can't copy paste. You need to use a Native VNC Client. [HA Addon How-To](https://community.home-assistant.io/t/deconz-addon-how-to-enable-vnc-set-port-in-network-configuration/137597), [Docker Environment Vars](https://community.home-assistant.io/t/deconz-addon-how-to-enable-vnc-set-port-in-network-configuration/137597). 
+    Please note that in the HA Addon and Docker webVNC you can't copy paste. You need to use a Native VNC Client. [HA Addon How-To](https://community.home-assistant.io/t/deconz-addon-how-to-enable-vnc-set-port-in-network-configuration/137597), [Docker Environment Vars](https://github.com/deconz-community/deconz-docker#environment-variables). 
 
     Option 2: To get debug logs in a headless installation / ssh session, use the following commands:
     ```
