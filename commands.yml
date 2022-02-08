@@ -92,3 +92,4 @@ commands:
     Phoscon: The interface reachable in the browser
   lqi: Link Quality Indicator (LQI) is explained on [this wiki page](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/LQI-explained).
   theallgroup: Switches like Opple and Ecodim sometimes have the bad habit of controlling all mains powered devices in your house. Check out [this](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Disable-the-deCONZ-All-group) URL for a fix.
+  ddf: To learn more about Device Descriptor Files (DDF), start [HERE](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/DDF-cheat-sheet).
