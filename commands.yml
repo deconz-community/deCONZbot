@@ -97,6 +97,7 @@ commands:
   bugreport: deCONZ bugs can be reported [here](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/new?assignees=&labels=Bug+report&template=bug_report.md&title=).
   theallgroup: Switches like Opple and Ecodim sometimes have the bad habit of controlling all mains powered devices in your house. Check out [this](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/What-you-can-do-when-a-switch-turns-(almost)-all-devices-on-off) URL for a fix.
   ddf: To learn more about Device Descriptor Files (DDF), start [HERE](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/DDF-cheat-sheet).
+  udevbug: Currently, there is a bug in UDEV which causes USB symlinks to be broken. Unfortunately, this is nothing that can be fixed in deCONZ. For possible solutions, please read [this issue](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/6937). 
   haos: |
     To upload files to the deCONZ addon in a HAOS instance, start with copying the file to the HAOS server using either the Samba or SSH addon. Next, start an SSH session to the HAOS server.
 
