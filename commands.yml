@@ -38,7 +38,8 @@ commands:
     Phoscon is closed source and needs devices to be added manually by their developer.
     However, the device will still be usable with the API/Home-Assistant/OpenHAB etc.
     You may want to go ahead and request support for your device at the [Forums](https://forum.phoscon.de/c/phoscon/feature-requests/18)
-  homebridgehue: For help with Homebridge Hue, please join [this Discord.](https://discord.gg/MbuzGbS)
+  homebridgehue: This command has been replaced by .homebridgedeconz
+  homebridgedeconz: For help with Homebridge deCONZ, please join [this Discord.](https://discord.gg/MbuzGbS)
   hueessentials: For information and support on the Hue Essentials app, please go to [this forum.](https://community.hueessentials.com/)
   binding: >
     You can find out how to re-do binding and attribute reporting [here](https://discordapp.com/channels/494922323518947329/704252638727897188/709120485862146161)
